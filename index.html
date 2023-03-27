@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head><!-- En-tête de la page -->
+<title>Battle of Eternia</title><!-- titre de la page -->
+<link href="index.css" rel="stylesheet"><!-- Relation au CSS -->
+<link rel="icon" href="./images/logo.ico" /><!-- Icone de la page -->
+</head>
+<body>
+
+<header><!-- Bannière supérieure de la page -->
+	
+	<h1 ><img id="menu-button" src="menu_button.png"><!-- bouton actionnant le menu de navigation -->
+  <a href="index.html"> Accueil </a><!-- auto-lien -->
+<a href="Eternia.7z" download><img id="download-button" src="download_button.png"></a><!-- Bouton pour télécharger le jeu -->
+</h1>
+
+</header>
+<nav id="menu"><!-- menu de navigation -->
+    <br><br><br>
+    <a href=knight_page.html>Les Chevaliers</a><br><br>
+    <a href=wizard_page.html>Les Sorciers</a><br><br>
+    <a href=assassin_page.html>Les Assassins</a><br><br>
+    <a href=teacher_page.html>Les Professeurs</a><br><br>
+    <a href=chef_page.html>Les Cuisiniers</a><br><br>
+    <a href=necromancer_page.html>Les Nécromanciens</a><br><br>
+</nav>	
+<br><br><br><br>
+<img src="./images/logo.png" style=" width: 30%; margin-left: 35%; margin-bottom: -5%;">
+<h2> Présentation du jeu </h2>
+<br><br>
+<p>Plongez dans "Battle of Eternia", le jeu de combat en 1 v 1 textuel codé en Python. Choisissez parmi une variété de classes uniques, chacune dotée de compétences et de points forts différents, et affrontez vos amis dans des combats intenses où la stratégie est primordiale pour triompher.<br><br>
+
+
+Pour remporter la victoire, analysez les faiblesses ennemies et les vôtres afin de faire tourner la partie à votre avantage. Utilisez la boutique pour sortir de l'impasse et vaincre votre adversaire.<br><br>
+
+Le système de jeu simple mais efficace d'Eternia vous permettra de devenir le maître stratège ultime. Préparez-vous à vivre une expérience de jeu immersive pour les fans de stratégie et de tactique.<br><br>
+
+Entrez dans l'univers d'Eternia et relevez le défi pour devenir le champion suprême des duels à couper le souffle !</p>
+
+<h2> Comment jouer ? </h2>
+<br><br>
+<p>Pour jouer à "Battle of Eternia", cliquez sur le bouton de téléchargement en haut à droite de cette fenêtre.<br><br>
+    Décompressez ensuite l'archive à l'aide de 7zip ou WinRAR.<br><br>
+
+
+Ensuite, double-cliquez sur le fichier "launch_game.bat" ou lancez dans un IDE python ou sur une console python
+le fichier "main.py".<br><br>
+</p>
+
+
+<h2> Déroulé d'une partie </h2>
+<br><br>
+<p>"Battle of Eternia" est un jeu qui se déroule en tour par tour. Ainsi, à chaque tour, le joueur fait un choix parmi
+    les 4 proposés :<br><br>
+
+    - Attaquer : le joueur voit alors toutes ses attaques s'afficher ainsi que leurs statistiques comme la puissance, les effets des attaques et leurs temps de recharge. Il en sélectionne une parmi les 5 dont il dispose ou annule son choix pour revenir au menu de choix d'actions précédent.<br><br>
+
+    - Magasin : le joueur entre dans la boutique du jeu pour acheter des bonus, tels que des potions augmentant les statistiques de façons permanentes ou des soins de PV. Attention toutefois, tous les articles sont à 100 pièces d'or.
+    Une fois dans la boutique, il est toujours possible de revenir au menu de choix d'actions.<br><br>
+
+    - Passer son tour : Peut se révéler stratégique dans certaine cituations, car même si le joueur offre un tour à l'ennemi, les effets actuels sur le joueur se réalisent tout de même pendant ce tour non joué.<br><br>
+
+    - Se suicider : Si la victoire ne vous attire pas, il reste toujours l'option rapide pour mettre fin au combat.<br><br>
+
+    Le jeu prend fin lorsque l'un des joueurs meurt.
+
+<h2> Conseils </h2>
+<br><br>
+<p>Voici quelques conseils qui seraient susceptibles d'aider tout joueur :<br><br>
+
+    - Ne sous-estimez pas l'importance des statistiques, elles sont capable de démultiplier la puissance des attaques portées.<br><br>
+
+    - Dès que vous le pouvez, rendez vous au magasin pour booster votre personnage.<br><br>
+
+    - Faites attention aux temps de recharges des attaques. Plus une attaque est puissante, plus sa recharge sera lente.<br><br>
+
+    - Vous ne pouvez "stocker" qu'une seule esquive de la prochaine attaque ennemie.<br><br>
+
+    - Faites attention aux statistiques de départ de chaque classe, elles présentent des avantages différents.<br><br>
+
+</p>
+
+<!-- Fonction pour ouvrir et fermer le menu de navigation -->
+<script type="text/javascript">
+	var menuButton = document.getElementById('menu-button');
+var menu = document.getElementById('menu');
+
+menuButton.addEventListener('click', function() {
+if (menu.style.display === 'block') {
+menu.style.display = 'none';
+} else {
+menu.style.display = 'block';
+}
+});
+</script>
+
+<br><br><br><br><br><br>
+<!-- Pied de page -->
+<center><footer> produit par Tristan Perrot, Cyrine Kaouache et Clarisse Allot | 2023 </footer></center>
+
+</body>
+</html>
